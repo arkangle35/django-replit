@@ -1,0 +1,12 @@
+#needed for django replit startup
+
+#make a file in django_project called views.py with the following code: 
+from django.shortcuts import render
+
+def index(request):
+
+  return render(request, 'templates/index.html' )
+  
+#----------------------------------------------------------------------------------------------------
+
+#make folder with no parent folder called "templates" and add a file called index.html in it
