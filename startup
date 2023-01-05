@@ -5,8 +5,19 @@ from django.shortcuts import render
 
 def index(request):
 
-  return render(request, 'templates/index.html' )
+  return render(request, 'templates/[HTML FILE NAME].html' )
   
 #----------------------------------------------------------------------------------------------------
 
-#make folder with no parent folder called "templates" and add a file called index.html in it
+#make folder with no parent folder called "templates" this is where you add html files
+
+#----------------------------------------------------------------------------------------------------
+#make sure this is in the urls.py file
+#delete anything about admin
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.[HTML FILE NAME]),
+]
